@@ -5,6 +5,7 @@
 // https://developers.google.com/open-source/licenses/bsd
 
 #include "gtest/gtest.h"
+#define NO_FORMAT_STATIC_ASSERT // a local hack
 #include "src/cts/src/Clock.h"
 #include "src/cts/src/HTreeBuilder.h"
 #include "utl/Logger.h"

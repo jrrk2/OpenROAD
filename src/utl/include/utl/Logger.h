@@ -143,7 +143,7 @@ class Logger
                    const std::string& message,
                    const Args&... args)
   {
-    log(tool, spdlog::level::level_enum::info, id, message, args...);
+   // log(tool, spdlog::level::level_enum::info, id, message, args...);
   }
 
   template <typename... Args>

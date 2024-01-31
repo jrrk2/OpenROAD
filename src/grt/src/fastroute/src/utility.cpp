@@ -34,6 +34,7 @@
 #include <fstream>
 #include <queue>
 
+#define NO_FORMAT_STATIC_ASSERT // a local hack
 #include "DataType.h"
 #include "FastRoute.h"
 #include "odb/db.h"

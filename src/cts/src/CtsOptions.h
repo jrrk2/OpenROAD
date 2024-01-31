@@ -42,6 +42,7 @@
 #include <string>
 #include <vector>
 
+#define NO_FORMAT_STATIC_ASSERT // a local hack
 #include "CtsObserver.h"
 #include "Util.h"
 #include "db.h"

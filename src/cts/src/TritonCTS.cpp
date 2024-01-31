@@ -42,6 +42,7 @@
 #include <iterator>
 #include <unordered_set>
 
+#define NO_FORMAT_STATIC_ASSERT // a local hack
 #include "Clock.h"
 #include "CtsOptions.h"
 #include "HTreeBuilder.h"
