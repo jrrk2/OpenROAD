@@ -116,7 +116,7 @@ class Logger
   template <typename... Args>
   inline void report(const std::string& message, const Args&... args)
   {
-    logger_->log(spdlog::level::level_enum::off, FMT_RUNTIME(message), args...);
+    //    logger_->log(spdlog::level::level_enum::off, FMT_RUNTIME(message), args...);
   }
 
   // Do NOT call this directly, use the debugPrint macro  instead (defined
@@ -128,12 +128,14 @@ class Logger
                     const Args&... args)
   {
     // Message counters do NOT apply to debug messages.
-    logger_->log(spdlog::level::level_enum::debug,
+    /*
+      logger_->log(spdlog::level::level_enum::debug,
                  FMT_RUNTIME("[{} {}-{}] " + message),
                  level_names[spdlog::level::level_enum::debug],
                  tool_names_[tool],
                  group,
                  args...);
+    */
     logger_->flush();
   }
 
@@ -143,7 +145,7 @@ class Logger
                    const std::string& message,
                    const Args&... args)
   {
-    log(tool, spdlog::level::level_enum::info, id, message, args...);
+   // log(tool, spdlog::level::level_enum::info, id, message, args...);
   }
 
   template <typename... Args>
